@@ -1,10 +1,8 @@
-# BIP39 Tool
+# BIP39 Tool - iOS Yallet edition
 
-A tool for converting BIP39 mnemonic phrases to addresses and private keys.
+A tool for converting BIP39 mnemonic phrases to addresses and private keys.   
 
-## Online Version
-
-https://iancoleman.io/bip39/
+**⚠️ ⚠ ️⚠️ WARNING: this tool will only work for wallets created with Yallet on iOS. ⚠️ ⚠️ ⚠️**
 
 ## Standalone offline version
 
@@ -16,17 +14,7 @@ This can be compiled from source using the command `python compile.py`
 
 ## Usage
 
-Enter your BIP39 phrase into the 'BIP39 Phrase' field, or press
-'Generate Random Phrase'
-
-If required, set the derivation path, although the defaults are quite usable.
-
-See the table for a list of addresses generated from the phrase.
-
-Toggle columns to blank to easily copy/paste a single column of data, eg to
-import private keys into a wallet or supply someone with a list of addresses.
-
-The BIP32 keys can be used at [bip32.org](https://bip32.org) if desired.
+Enter your BIP39 phrase into the 'BIP39 Phrase' field
 
 ## Donations
 
