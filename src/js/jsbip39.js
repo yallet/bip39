@@ -129,16 +129,8 @@ var Mnemonic = function(language) {
     }
 
     self.toSeed = function(mnemonic, passphrase) {
-        passphrase = passphrase || '';
-        mnemonic = self.joinWords(self.splitWords(mnemonic)); // removes duplicate blanks
-        var mnemonicNormalized = self.normalizeString(mnemonic);
-        passphrase = self.normalizeString(passphrase)
-        passphrase = "mnemonic" + passphrase;
-        var mnemonicBits = sjcl.codec.utf8String.toBits(mnemonicNormalized);
-        var passphraseBits = sjcl.codec.utf8String.toBits(passphrase);
-        var result = sjcl.misc.pbkdf2(mnemonicBits, passphraseBits, PBKDF2_ROUNDS, 512, hmacSHA512);
-        var hashHex = sjcl.codec.hex.fromBits(result);
-        return hashHex;
+        var mnemonicBits = sjcl.codec.utf8String.toBits(mnemonic);
+        return sjcl.codec.hex.fromBits(mnemonicBits);
     }
 
     self.splitWords = function(mnemonic) {

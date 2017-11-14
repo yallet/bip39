@@ -292,18 +292,18 @@
                 <div class="col-md-12">
                     <h2>Derivation Path</h2>
                     <ul class="derivation-type nav nav-tabs" role="tablist">
-                        <li id="bip32-tab">
+                        <li id="bip32-tab" class="active">
                             <a href="#bip32" role="tab" data-toggle="tab">BIP32</a>
                         </li>
-                        <li id="bip44-tab" class="active">
+                        <!--<li id="bip44-tab">
                             <a href="#bip44" role="tab" data-toggle="tab">BIP44</a>
                         </li>
                         <li id="bip49-tab">
                             <a href="#bip49" role="tab" data-toggle="tab">BIP49</a>
-                        </li>
+                        </li>-->
                     </ul>
                     <div class="derivation-type tab-content">
-                        <div id="bip44" class="tab-pane active">
+                        <div id="bip44" class="tab-pane">
                             <form class="form-horizontal" role="form">
                                 <br>
                                 <div class="col-sm-2"></div>
@@ -383,7 +383,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div id="bip32" class="tab-pane">
+                        <div id="bip32" class="tab-pane active">
                             <form class="form-horizontal" role="form">
                                 <br>
                                 <div class="col-sm-2"></div>
@@ -405,7 +405,7 @@
                                 <div class="form-group">
                                     <label for="bip32-path" class="col-sm-2 control-label">BIP32 Derivation Path</label>
                                     <div class="col-sm-10">
-                                        <input id="bip32-path" type="text" class="path form-control" value="m/0">
+                                        <input id="bip32-path" type="text" class="path form-control" value="m">
                                     </div>
                                 </div>
                                 <div class="form-group">
